@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5972EAC1CD25A8F00CA49F8 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5972EAB1CD25A8F00CA49F8 /* PersistenceLayer.framework */; };
+		D5972EAF1CD25AA600CA49F8 /* EventsBL.h in Headers */ = {isa = PBXBuildFile; fileRef = D5972EAD1CD25AA600CA49F8 /* EventsBL.h */; };
+		D5972EB01CD25AA600CA49F8 /* EventsBL.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EAE1CD25AA600CA49F8 /* EventsBL.m */; };
+		D5972EB31CD25D9C00CA49F8 /* ScheduleBL.h in Headers */ = {isa = PBXBuildFile; fileRef = D5972EB11CD25D9C00CA49F8 /* ScheduleBL.h */; };
+		D5972EB41CD25D9C00CA49F8 /* ScheduleBL.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EB21CD25D9C00CA49F8 /* ScheduleBL.m */; };
+		D5972EB61CD2625500CA49F8 /* EventsBLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EB51CD2625500CA49F8 /* EventsBLTest.m */; };
+		D5972EB81CD2629F00CA49F8 /* ScheduleBLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EB71CD2629F00CA49F8 /* ScheduleBLTest.m */; };
 		D5EEEDB31CCF620D00457495 /* BusinessLogicLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D5EEEDB21CCF620D00457495 /* BusinessLogicLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5EEEDBA1CCF620D00457495 /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5EEEDAF1CCF620D00457495 /* BusinessLogicLayer.framework */; };
 		D5EEEDBF1CCF620D00457495 /* BusinessLogicLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEEDBE1CCF620D00457495 /* BusinessLogicLayerTests.m */; };
@@ -23,6 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5972EAB1CD25A8F00CA49F8 /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../PersistenceLayer/build/Debug-iphoneos/PersistenceLayer.framework"; sourceTree = "<group>"; };
+		D5972EAD1CD25AA600CA49F8 /* EventsBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsBL.h; sourceTree = "<group>"; };
+		D5972EAE1CD25AA600CA49F8 /* EventsBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsBL.m; sourceTree = "<group>"; };
+		D5972EB11CD25D9C00CA49F8 /* ScheduleBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleBL.h; sourceTree = "<group>"; };
+		D5972EB21CD25D9C00CA49F8 /* ScheduleBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleBL.m; sourceTree = "<group>"; };
+		D5972EB51CD2625500CA49F8 /* EventsBLTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsBLTest.m; sourceTree = "<group>"; };
+		D5972EB71CD2629F00CA49F8 /* ScheduleBLTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleBLTest.m; sourceTree = "<group>"; };
 		D5EEEDAF1CCF620D00457495 /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BusinessLogicLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5EEEDB21CCF620D00457495 /* BusinessLogicLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessLogicLayer.h; sourceTree = "<group>"; };
 		D5EEEDB41CCF620D00457495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5972EAC1CD25A8F00CA49F8 /* PersistenceLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +68,7 @@
 		D5EEEDA51CCF620D00457495 = {
 			isa = PBXGroup;
 			children = (
+				D5972EAB1CD25A8F00CA49F8 /* PersistenceLayer.framework */,
 				D5EEEDB11CCF620D00457495 /* BusinessLogicLayer */,
 				D5EEEDBD1CCF620D00457495 /* BusinessLogicLayerTests */,
 				D5EEEDB01CCF620D00457495 /* Products */,
@@ -73,6 +89,10 @@
 			children = (
 				D5EEEDB21CCF620D00457495 /* BusinessLogicLayer.h */,
 				D5EEEDB41CCF620D00457495 /* Info.plist */,
+				D5972EAD1CD25AA600CA49F8 /* EventsBL.h */,
+				D5972EAE1CD25AA600CA49F8 /* EventsBL.m */,
+				D5972EB11CD25D9C00CA49F8 /* ScheduleBL.h */,
+				D5972EB21CD25D9C00CA49F8 /* ScheduleBL.m */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -82,6 +102,8 @@
 			children = (
 				D5EEEDBE1CCF620D00457495 /* BusinessLogicLayerTests.m */,
 				D5EEEDC01CCF620D00457495 /* Info.plist */,
+				D5972EB51CD2625500CA49F8 /* EventsBLTest.m */,
+				D5972EB71CD2629F00CA49F8 /* ScheduleBLTest.m */,
 			);
 			path = BusinessLogicLayerTests;
 			sourceTree = "<group>";
@@ -93,7 +115,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5972EB31CD25D9C00CA49F8 /* ScheduleBL.h in Headers */,
 				D5EEEDB31CCF620D00457495 /* BusinessLogicLayer.h in Headers */,
+				D5972EAF1CD25AA600CA49F8 /* EventsBL.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5972EB41CD25D9C00CA49F8 /* ScheduleBL.m in Sources */,
+				D5972EB01CD25AA600CA49F8 /* EventsBL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5972EB61CD2625500CA49F8 /* EventsBLTest.m in Sources */,
+				D5972EB81CD2629F00CA49F8 /* ScheduleBLTest.m in Sources */,
 				D5EEEDBF1CCF620D00457495 /* BusinessLogicLayerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +402,7 @@
 				D5EEEDC51CCF620D00457495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5EEEDC61CCF620D00457495 /* Build configuration list for PBXNativeTarget "BusinessLogicLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -382,6 +411,7 @@
 				D5EEEDC81CCF620D00457495 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

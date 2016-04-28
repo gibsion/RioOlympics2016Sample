@@ -5,7 +5,7 @@
 //  Created by gibsion on 16/4/28.
 //  Copyright © 2016年 gibsion. All rights reserved.
 //
-
+#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "Events.h"
 #import "EventsDAO.h"
@@ -44,7 +44,8 @@
 
 - (void)test_2_FindById
 {
-    self.theEvents.EventID = 1;
+    NSLog(@"self.theEvents.EventID = %i", self.theEvents.EventID);
+    self.theEvents.EventID = 41;
     Events *resEvents = [self.dao findById:self.theEvents];
     
     XCTAssertNotNil(resEvents, @"查询记录为nil");
@@ -59,9 +60,9 @@
 - (void)test_3_FindAll
 {
     NSArray *list = [self.dao findAll];
-    XCTAssertEqual([list count], 1);
+    XCTAssertEqual([list count], 41);
     
-    Events *resEvents = list[0];
+    Events *resEvents = list[40];
     XCTAssertEqualObjects(self.theEvents.EventName, resEvents.EventName);
     XCTAssertEqualObjects(self.theEvents.EventIcon, resEvents.EventIcon);
     XCTAssertEqualObjects(self.theEvents.KeyInfo, resEvents.KeyInfo);
@@ -72,7 +73,7 @@
 //测试 修改Events方法
 -(void) test_4_Modify
 {
-    self.theEvents.EventID = 41;
+    self.theEvents.EventID = 40;
     self.theEvents.EventName = @"test modify EventName";
     
     int res = [self.dao modify:self.theEvents];
@@ -102,14 +103,6 @@
     //断言 查询结果nil
     XCTAssertNil(resEvents, @"记录删除失败");
     
-}
-
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
 }
 
 @end

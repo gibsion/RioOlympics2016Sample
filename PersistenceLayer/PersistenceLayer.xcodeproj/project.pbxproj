@@ -11,6 +11,7 @@
 		D5972EA51CD1E98300CA49F8 /* ScheduleDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EA31CD1E98300CA49F8 /* ScheduleDAO.m */; };
 		D5972EA61CD1F58F00CA49F8 /* PersistenceLayer-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D59D01E31CD0925300D33608 /* PersistenceLayer-Prefix.pch */; };
 		D5972EA81CD1FF6A00CA49F8 /* EventsDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EA71CD1FF6A00CA49F8 /* EventsDAOTest.m */; };
+		D5972EAA1CD2063900CA49F8 /* ScheduleDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EA91CD2063900CA49F8 /* ScheduleDAOTest.m */; };
 		D59D01CB1CD0692A00D33608 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D59D01CA1CD0692A00D33608 /* libsqlite3.tbd */; };
 		D59D01D11CD0699E00D33608 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = D59D01CF1CD0699E00D33608 /* create_load.sql */; };
 		D59D01D21CD0699E00D33608 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = D59D01D01CD0699E00D33608 /* DBConfig.plist */; };
@@ -43,6 +44,7 @@
 		D5972EA21CD1E98300CA49F8 /* ScheduleDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDAO.h; sourceTree = "<group>"; };
 		D5972EA31CD1E98300CA49F8 /* ScheduleDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDAO.m; sourceTree = "<group>"; };
 		D5972EA71CD1FF6A00CA49F8 /* EventsDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDAOTest.m; sourceTree = "<group>"; };
+		D5972EA91CD2063900CA49F8 /* ScheduleDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDAOTest.m; sourceTree = "<group>"; };
 		D59D01CA1CD0692A00D33608 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D59D01CF1CD0699E00D33608 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
 		D59D01D01CD0699E00D33608 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				D5EEEDE21CCF622A00457495 /* PersistenceLayerTests.m */,
 				D5972EA71CD1FF6A00CA49F8 /* EventsDAOTest.m */,
+				D5972EA91CD2063900CA49F8 /* ScheduleDAOTest.m */,
 				D5EEEDE41CCF622A00457495 /* Info.plist */,
 			);
 			path = PersistenceLayerTests;
@@ -285,6 +288,7 @@
 			files = (
 				D5EEEDE31CCF622A00457495 /* PersistenceLayerTests.m in Sources */,
 				D5972EA81CD1FF6A00CA49F8 /* EventsDAOTest.m in Sources */,
+				D5972EAA1CD2063900CA49F8 /* ScheduleDAOTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
