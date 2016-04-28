@@ -1,0 +1,18 @@
+//
+//  PersistenceLayer-Prefix.pch
+//  PersistenceLayer
+//
+//  Created by gibsion on 16/4/27.
+//  Copyright © 2016年 gibsion. All rights reserved.
+//
+
+#ifndef PersistenceLayer_Prefix_pch
+#define PersistenceLayer_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#endif /* PersistenceLayer_Prefix_pch */
+
+#define DB_FILE_NAME @"app.db"
