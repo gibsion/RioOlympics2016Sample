@@ -20,6 +20,7 @@
     //延迟加载Events数据
     for (Schedule *schedule in schedules) {
         Events *event = [eventDAO findById:schedule.Event];
+        schedule.Event = event;
         NSArray *allkey = [resDict allKeys];
         
         //把NSMutableArray结构化为NSMutableDictionary结构

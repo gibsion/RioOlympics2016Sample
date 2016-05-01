@@ -15,4 +15,4 @@
 
 #endif /* PersistenceLayer_Prefix_pch */
 
-#define DB_FILE_NAME @"app.db"
+#define DB_FILE_NAME @"/app.db"

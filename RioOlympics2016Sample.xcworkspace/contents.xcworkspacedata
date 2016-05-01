@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:RioOlympics2016Sample/RioOlympics2016Sample.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PersistenceLayer/PersistenceLayer.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:BusinessLogicLayer/BusinessLogicLayer.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:RioOlympics2016Sample/RioOlympics2016Sample.xcodeproj">
    </FileRef>
 </Workspace>

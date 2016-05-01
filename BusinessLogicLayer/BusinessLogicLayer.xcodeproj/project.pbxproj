@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D5972EAC1CD25A8F00CA49F8 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5972EAB1CD25A8F00CA49F8 /* PersistenceLayer.framework */; };
-		D5972EAF1CD25AA600CA49F8 /* EventsBL.h in Headers */ = {isa = PBXBuildFile; fileRef = D5972EAD1CD25AA600CA49F8 /* EventsBL.h */; };
+		D5972EAF1CD25AA600CA49F8 /* EventsBL.h in Headers */ = {isa = PBXBuildFile; fileRef = D5972EAD1CD25AA600CA49F8 /* EventsBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5972EB01CD25AA600CA49F8 /* EventsBL.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EAE1CD25AA600CA49F8 /* EventsBL.m */; };
-		D5972EB31CD25D9C00CA49F8 /* ScheduleBL.h in Headers */ = {isa = PBXBuildFile; fileRef = D5972EB11CD25D9C00CA49F8 /* ScheduleBL.h */; };
+		D5972EB31CD25D9C00CA49F8 /* ScheduleBL.h in Headers */ = {isa = PBXBuildFile; fileRef = D5972EB11CD25D9C00CA49F8 /* ScheduleBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5972EB41CD25D9C00CA49F8 /* ScheduleBL.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EB21CD25D9C00CA49F8 /* ScheduleBL.m */; };
 		D5972EB61CD2625500CA49F8 /* EventsBLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EB51CD2625500CA49F8 /* EventsBLTest.m */; };
 		D5972EB81CD2629F00CA49F8 /* ScheduleBLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5972EB71CD2629F00CA49F8 /* ScheduleBLTest.m */; };

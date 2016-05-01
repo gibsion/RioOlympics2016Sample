@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <PersistenceLayer/DBHelper.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        [DBHelper initDB];
+    });
+    
     return YES;
 }
 

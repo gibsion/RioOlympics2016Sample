@@ -35,7 +35,7 @@
     //版本号不一致
     if ([dbConfigVersion intValue] != versionNumber) {
         NSString *dbFilePath = [DBHelper applicationDocumentsDirectoryFile:DB_FILE_NAME];
-        
+        NSLog(@"###dbFilePath=%@ ###", dbFilePath);
         if (sqlite3_open([dbFilePath UTF8String], &db)) {
             sqlite3_close(db);
             NSAssert(NO, @"数据库打开失败");
@@ -54,6 +54,11 @@
             NSString *updateSql = [[NSString alloc] initWithFormat:@"update DBVersionInfo set version_number = %i", [dbConfigVersion intValue] ];
             if (sqlite3_exec(db, [updateSql UTF8String], NULL, NULL, &err) != SQLITE_OK) {
                 NSLog(@"更新DBVersionInfo数据失败");
+                NSLog(@"version_number=%i", [dbConfigVersion intValue]);
+            }
+            else
+            {
+                NSLog(@"更新DBVersionInfo数据成功！version_number=%i", [dbConfigVersion intValue]);
             }
             
             sqlite3_close(db);
@@ -72,7 +77,7 @@
     }
     else
     {
-        NSString *sql = @"create Table if not exist DBVersionInfo";
+        NSString *sql = @"create Table if not exists DBVersionInfo (version_number int);";
         sqlite3_stmt *statment;
         //预处理过程
         if (sqlite3_prepare_v2(db, [sql UTF8String], -1, &statment, NULL) == SQLITE_OK) {
@@ -88,6 +93,10 @@
                     NSLog(@"插入数据失败");
                 }
             }
+        }
+        else
+        {
+            NSLog(@"预处理失败：%@", sql);
         }
         
         sqlite3_finalize(statment);
